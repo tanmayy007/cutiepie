@@ -1,6 +1,6 @@
-document.getElementById("beautyForm").addEventListener("submit", function(event) {
+document.getElementById("beautyForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    
+
     const inputText = document.getElementById("beautyInput").value.trim().toLowerCase();
     let resultText = "";
 
@@ -10,14 +10,36 @@ document.getElementById("beautyForm").addEventListener("submit", function(event)
         "the essence of beauty",
         "true beauty",
         "beauty in life",
-        "beauty defined"
+        "beauty defined",
+        "What is beauty",
+        "What defines beauty",
+        "The most beautiful girl in the whole wide world",
+        "queen of nift shillong",
+        "the best version of geet"
+
+    ];
+
+    const vPhrases = [
+        "chutiya"
     ];
 
     if (validPhrases.includes(inputText)) {
         resultText = "Ishneet Rekhi <3";
-    } else {
+    }
+    if (vPhrases.includes(inputText)) {
+        resultText = "Tanmay Tripathi Xd";
+    }
+    else {
         resultText = "Try a different phrase!";
     }
 
     document.getElementById("result").innerText = resultText;
+
+    document.getElementById("doItAgainButton").style.display = "inline-block";
+
+    document.getElementById("doItAgainButton").addEventListener("click", function () {
+        document.getElementById("beautyInput").value = "";
+        document.getElementById("result").innerText = "";
+        this.style.display = "none";
+    });
 });
