@@ -19,15 +19,12 @@ document.getElementById("beautyForm").addEventListener("submit", function (event
         "queen of nift shillong"
     ];
 
-    const vPhrases = [
-        "chutiya"
-    ];
+    
 
     if (validPhrases.includes(inputText)) {
         resultText = "Ishneet Rekhi <3";
-    } else if (vPhrases.includes(inputText)) {
-        resultText = "Tanmay Tripathi Xd";
-    } else {
+    }
+    else {
         resultText = "Try a different phrase!";
     }
 
