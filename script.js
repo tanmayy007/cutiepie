@@ -1,7 +1,10 @@
 document.getElementById("beautyForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const inputText = document.getElementById("beautyInput").value.trim().toLowerCase();
+    // Normalize the input text: convert to lowercase and remove punctuation like "?"
+    let inputText = document.getElementById("beautyInput").value.trim().toLowerCase();
+    inputText = inputText.replace(/[?]/g, "");
+
     let resultText = "";
 
     const validPhrases = [
@@ -11,12 +14,9 @@ document.getElementById("beautyForm").addEventListener("submit", function (event
         "true beauty",
         "beauty in life",
         "beauty defined",
-        "What is beauty",
-        "What defines beauty",
-        "The most beautiful girl in the whole wide world",
-        "queen of nift shillong",
-        "the best version of geet"
-
+        "what defines beauty",
+        "the most beautiful girl in the whole wide world",
+        "queen of nift shillong"
     ];
 
     const vPhrases = [
@@ -25,11 +25,9 @@ document.getElementById("beautyForm").addEventListener("submit", function (event
 
     if (validPhrases.includes(inputText)) {
         resultText = "Ishneet Rekhi <3";
-    }
-    if (vPhrases.includes(inputText)) {
+    } else if (vPhrases.includes(inputText)) {
         resultText = "Tanmay Tripathi Xd";
-    }
-    else {
+    } else {
         resultText = "Try a different phrase!";
     }
 
