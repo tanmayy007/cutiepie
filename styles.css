@@ -46,6 +46,12 @@ input[type="text"] {
     font-size: 1em;
 }
 
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 button {
     padding: 10px 20px;
     background-color: #d81b60;
