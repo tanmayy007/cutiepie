@@ -16,6 +16,7 @@ document.getElementById("beautyForm").addEventListener("submit", function (event
         "beauty defined",
         "what defines beauty",
         "the most beautiful girl in the whole wide world",
+        "the best version of geet",
         "queen of nift shillong"
     ];
     if (validPhrases.includes(inputText)) {
