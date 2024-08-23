@@ -18,9 +18,6 @@ document.getElementById("beautyForm").addEventListener("submit", function (event
         "the most beautiful girl in the whole wide world",
         "queen of nift shillong"
     ];
-
-    
-
     if (validPhrases.includes(inputText)) {
         resultText = "Ishneet Rekhi <3";
     }
