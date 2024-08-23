@@ -11,8 +11,11 @@
         <h1>Discover the Beauty</h1>
         <p>Enter a phrase and find out a girl's name that represents it:</p>
         <form id="beautyForm">
-            <input type="text" id="beautyInput" placeholder="What is beauty?" required>
-            <button type="submit">Find Out</button>
+            <input type="text" id="beautyInput" placeholder="Enter your phrase" required>
+            <div class="button-group">
+                <button type="submit" id="findOutButton">Find Out!</button>
+                <button type="button" id="doItAgainButton" style="display: none;">Do It Again!</button>
+            </div>
         </form>
         <div id="result" class="result"></div>
     </div>
